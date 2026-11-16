@@ -518,10 +518,10 @@
     <h3>Biostatistics</h3>
 
     <p>
-      My primary research interest is in biostatistics, with a focus on applying statistical
-      methods to public health and biomedical data. I am particularly interested in maternal
-      and child health, survey data analysis, regression modeling, and the use of statistical
-      methods to understand health-related outcomes in population-based studies.
+      My research interests lie in biostatistics, survival analysis, statistical learning, and high-dimensional genomic and epigenetic data. 
+      I am interested in pathway-based prediction of patient outcomes and the identification of cancer subtypes using gene-expression and DNA methylation data.
+      Across these areas, I want to understand how data representation, preprocessing, and modeling choices affect interpretability, predictive performance, and reproducibility across datasets. 
+      My broader interests include epidemiology, maternal and child health, and statistical applications in public health.
     </p>
 
     <p>
@@ -532,37 +532,61 @@
     </p>
   </div>
 </section>
-  <section id="thesis">
+<section id="thesis">
   <h2 class="section-title">Thesis</h2>
 
   <div class="content-box">
-    <h3>Pathway-Based Statistical Learning for Genomic Data Analysis</h3>
+    <h3>Evaluating Gene-Level and Pathway-Based Approaches to Survival Prediction</h3>
 
     <p>
-      My MS thesis focuses on pathway-based statistical approaches for analyzing genomic data.
-      The project investigates how different pathway-level methods can summarize high-dimensional
-      gene expression data into biologically meaningful features that can be used for prediction
-      and statistical modeling.
+      My master’s thesis investigates how gene-expression data from
+      The Cancer Genome Atlas (TCGA) can be used to predict patient
+      survival. I compare models that use individual genes with
+      models that summarize genes into pathways, examining whether
+      biological groupings improve prediction and interpretability.
     </p>
 
     <p>
-      The current direction includes comparing pathway databases, such as KEGG, Reactome, GO,
-      and other curated gene-set collections, and evaluating pathway scoring methods such as
-      principal component analysis and related pathway-level summarization techniques.
+      I use PCA, GSVA, and ssGSEA to represent each pathway through
+      a single score or a vector of scores. The study considers
+      pathway-specific survival models that include clinical
+      information, such as age, sex, and cancer stage, and combines
+      pathway predictions using regularized regression. Comparisons
+      with matched random gene sets help assess whether biological
+      pathway structure adds predictive value beyond grouping
+      genes together.
     </p>
 
     <p>
-      The broader goal of this thesis is to understand how pathway selection, pathway scoring,
-      and predictive modeling choices affect performance, interpretability, and stability in
-      biomedical data analysis.
+      The broader goal is to understand how pathway collections,
+      score representations, and modeling strategies affect
+      predictive accuracy and stability across datasets.
     </p>
 
     <ul>
-      <li>Research area: Biostatistics, statistical genomics, and biomedical data analysis</li>
-      <li>Methods: PCA, pathway-level feature construction, regression modeling, and prediction</li>
-      <li>Data type: Gene expression and survival-related biomedical data</li>
-      <li>Tools: R, RStudio, Quarto, GitHub, and statistical computing packages</li>
-      <li>Advisor: Dr. Tyler Grimes, Ph.D</li>
+      <li>
+        <strong>Research areas:</strong> Biostatistics, statistical
+        genomics, survival analysis, and statistical learning
+      </li>
+      <li>
+        <strong>Methods:</strong> PCA, GSVA, ssGSEA, Cox proportional
+        hazards and accelerated failure time models, regularized
+        regression, and model validation
+      </li>
+      <li>
+        <strong>Evaluation:</strong> Uno’s concordance index,
+        Brier score, and integrated Brier score
+      </li>
+      <li>
+        <strong>Data:</strong> TCGA gene-expression and clinical
+        survival data
+      </li>
+      <li>
+        <strong>Tools:</strong> R, RStudio, Quarto, Git, and GitHub
+      </li>
+      <li>
+        <strong>Advisor:</strong> Dr. Tyler Grimes
+      </li>
     </ul>
   </div>
 </section>
@@ -618,7 +642,7 @@
   </section>
 
   <footer>
-    © 2026 Salman Shakib | Statistics Portfolio
+    © 2026 Salman Shakib | Portfolio
   </footer>
 
 </body>
